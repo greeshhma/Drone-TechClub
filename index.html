@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>DTC|Dhole Patil College Of Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="scripts.js"></script>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        #particles-js {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+        
+        .titlename {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            font-weight: bolder;
+            color: white;
+        }
+        
+        .subtitlename {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-30%, -30%);
+            font-size: 13px;
+            color: #7AB2B2;
+        }
+        
+        .explorebutton {
+            position: absolute;
+            bottom: 30%;
+            left: 45%;
+            font-size: 18px;
+            color: #4D869C;
+            font-family: inherit;
+            font-weight: 800;
+            cursor: pointer;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+        }
+        
+        .explorebutton:focus,
+        .explorebutton:hover {
+            color: white;
+        }
+        
+        .explorebutton:focus:after,
+        .explorebutton:hover:after {
+            width: 100%;
+            left: 0%;
+            color: white;
+        }
+        
+        .explorebutton:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+        
+        a:hover {
+            color: #4D869C
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!--particles-->
+
+
+    <section>
+
+        <div id="particles-js">
+            <h1 class="titlename"> DRONE TECHNICAL CLUB </h1>
+            <h2 class="subtitlename">"Unlocking the skies, empowering innovation: where imagination takes flight, drone technology soars."</h2>
+            <button class="explorebutton"><a href="#Navbar">
+            Explore More
+            </a>
+            </button>
+
+
+            <!-- particle files, first particle.js and then app -->
+
+            <script src="particles.js/particles.js"></script>
+            <script src="particles.js/app.js"></script>
+
+        </div>
+    </section>
+
+
+    <!--header-->
+
+
+    <section id="Navbar" class="sticky">
+        <header class="text-black bg-white body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-black mb-4 md:mb-0">
+                    <a class="flex title-font font-medium items-center text-black mb-4 md:mb-0">
+                        <img src="img/dtc logo.png" class="logo">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </a>
+                </a>
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                    <i class=" fa-solid fa-house "></i>
+                    <button class="dropbtn"><a href="#Home">Home</a></button>
+                    <i class=" fa-solid fa-circle-info "></i>
+                    <button class="dropbtn"><a href="#About Us">About Us</a></button>
+                    <i class=" fa-solid fa-sliders "></i>
+                    <button class="dropbtn"><a href="#Services">Services</a></button>
+                    <i class=" fa-solid fa-tarp "></i>
+                    <button class="dropbtn"><a href="#Projects">Projects</a></button>
+                    <i class=" fa-solid fa-users "></i>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="#Our Team">Management</a></button>
+                        <div class="dropdown-content">
+                            <a href="#Technical Team">Technical Team</a>
+                            <a href="#Event Team">Event Team</a>
+                            <a href="#Research Team">Research Team</a>
+                            <a href="#Flight Team">Flight Team</a>
+                            <a href="#Media Team">Media Team</a>
+                        </div>
+                    </div>
+                    <i class=" fa-solid fa-phone "></i>
+                    <button class="dropbtn"><a href="#Contact">Contact</a></button>
+                    <button class="Btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="svgIcon"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                <span class="text">Instagram</span>
+              </button>
+
+                </nav>
+            </div>
+        </header>
+        <hr style="width:100%;text-align:left;margin-left:0">
+    </section>
+
+
+    <!--home-->
+
+    <section id="Home" class="text-black body-font">
+        <div class="proj">
+            <h1>Home</h1>
+
+
+            <!--marquee section-->
+
+
+            <section id="events" class="section">
+                <div class="homecontainer">
+                    <h2>Upcoming Events</h2>
+                    <div class="marquee">
+                        <div class="marquee-content">
+                            <span>Drone Racing Championship - July 15, 2024 | </span>
+                            <span>AI and Drones Workshop - August 22, 2024 | </span>
+                            <span>Annual Drone Expo - September 30, 2024 | </span>
+                            <span>Drone Photography Contest - October 10, 2024 | </span>
+                            <span>Drone Innovation Summit - November 5, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--vision & mission-->
+
+            <section class="vision-mission">
+                <div class="vm">
+                    <div class="vmcard">
+                        <div class="face back">
+                            <div class="vmcontent">
+                                <span class="stars"></span>
+                                <b class="desc">Vision</b>
+                                <p class="desc">
+                                    “ To develop full-fledged Drone ecosystem consisting Cloud, Artificial Intelligence and advanced Drones for aerial monitoring and analysis, and share the knowledge along the way! ”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="face front">
+                            <b>Vision</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vm1">
+                    <div class="vmcard1">
+                        <div class="face1 back">
+                            <div class="vmcontent1">
+                                <span class="stars1"></span>
+                                <b class="desc1">Mission</b>
+                                <p class="desc1">
+                                    1. Provide a platform to learn and experiment on diverse technologies in Drone and AI.<br> 2. To build advanced and autonomous drones.<br> 3. To make students capable of designing, building, programming robotic systems,
+                                    drones and peripheral systems.<br> 4. Share knowledge through workshops, awareness sessions and collaborations.<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="face1 front">
+                            <b>Mission</b>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <!--about us-->
+
+    <section id="About Us">
+        <div class="proj">
+            <h1 class="secname">About Us</h1>
+
+            <div class="abtcard">
+                <a class="abtcard1" href="#">
+                    <p class="small">The grand inauguration of the <b>Drone Technical Club at Dhole Patil College of Engineering </b>was a momentous occasion graced by the esteemed presence of<b> Mr. Uday Dev & Mr. Bhushan Muthiyan, CEO,Automation AI Infosystem Pvt Ltd,Pune,</b>an
+                        eminent figure in the field. <br> The event, organized in collaboration with <b>Mr. Ganesh Thorat from Cerebrosparks Pune </b>, was a celebration of technological advancement and a testament to the college's commitment to nurturing
+                        innovation.
+                        <br> Excitement filled the air as students and faculty gathered, eagerly awaiting the beginning of a new era in drone technology. Drone Technical club is a Technical platform for students to share their ideas, collaborate with
+                        each other to come up with unique solutions and work in teams to prepare drones to serve the society.</p>
+                    <div class="go-corner" href="#">
+                        <div class="go-arrow">
+                            →
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <hr style="width:100%;text-align:left;margin-left:0">
+        </div>
+    </section>
+
+
+    <!--our supporters-->
+
+
+    <section class="text-black body-font">
+        <div class="proj">
+            <h1 class="secname">Our Supporters</h1>
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4">
+
+                    <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                        <div class="supporthover">
+                            <div class="h-full text-center">
+                                <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="img/services-event.jpg">
+                                <p class="leading-relaxed">Our objective is not only to educate, but also to inculcate integrity, honesty, values and capability for hard work. We welcome you to become a part of an incredible journey where we encourage you to spread your wings and
+                                    soar, as you follow your dreams and turn them into reality.</p>
+                                <span class="inline-block h-1 w-10 rounded bg-green-400 mt-6 mb-4"></span>
+                                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm"><b>Mr. Sagar U. Dhole Patil</b></h2>
+                                <p class="text-gray-500">Hon. Chairman <br> Dhole Patil Education Society</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                        <div class="supporthover">
+                            <div class="h-full text-center">
+                                <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="img/services-workshop.jpg">
+                                <p class="leading-relaxed">We have been in the field of education for the past decade. In this last decade I have had the dream of putting together an authentic, vibrant and reliable institute operating in a region surrounded by the Pune IT hub.
+                                    I am sure that we will achieve our mission with the cooperation and team work of every member of DPES.</p>
+                                <span class="inline-block h-1 w-10 rounded bg-green-400 mt-6 mb-4"></span>
+                                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm"><b>Mrs. Uma Sagar Dhole Patil</b></h2>
+                                <p class="text-gray-500">Secretary<br> Dhole Patil Education Society</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="lg:w-1/3 lg:mb-0 p-4">
+                        <div class="supporthover">
+                            <div class="h-full text-center">
+                                <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="img/services-flight.jpg">
+                                <p class="leading-relaxed">We believe in “You dream, we educate…”. We encourage and inspire our students to do well in their academics and also to get involved in co-curricular activities in order to take up challenges, improve interpersonal skills
+                                    and personality, be self-dependent and above of all, have a worthy time while learning.</p>
+                                <span class="inline-block h-1 w-10 rounded bg-green-400 mt-6 mb-4"></span>
+                                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm"><b>Dr. O. R. Rajankar</b></h2>
+                                <p class="text-gray-500">Principal <br> Dhole Patil Education Society</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="width:100%;text-align:left;margin-left:0">
+        </div>
+    </section>
+
+
+    <!--our collaborators-->
+
+
+    <section class="text-black body-font">
+        <div class="proj">
+            <h1 class="secname">Our Collaborators</h1>
+            <div class="collabcards">
+                <div class="card collab1">
+                    <img src="img/cerebrospark.jpg" class="collabimgs">
+                </div>
+
+                <div class="card collab2">
+                    <img src="img/anantam.png" class="collabimgs">
+                </div>
+            </div>
+        </div>
+        <hr style="width:100%;text-align:left;margin-left:0">
+    </section>
+
+
+    <!--services-->
+
+
+    <section id="Services">
+        <section class="text-black body-font">
+            <div class="proj">
+                <h1 class="secname">Services</h1>
+                <br><br>
+                <div class="card-work">
+                    <img src="img/services-workshop.jpg" class="card-image-work"></img>
+                    <div class="card-description-work">
+                        <p class="text-title-work">Workshops</p>
+                        <p class="text-body-work">We conduct workshops in college, to increase drone awareness among students.</p>
+                    </div>
+                </div>
+
+
+                <div class="card-flight">
+                    <img src="img/services-flight.jpg" class="card-image-flight"><img>
+                    <div class="card-description-flight">
+                        <p class="text-title-flight">Flight Operations</p>
+                        <p class="text-body-flight">We Conduct drone flying operations and also test the newly made drones in campus.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card-drone">
+                    <img src="img/services-manufacturing.jpg" class="card-image-drone"></img>
+                    <div class="card-description-drone">
+                        <p class="text-title-drone"> Drone Manufacturing </p>
+                        <p class="text-body-drone">We develop our drones by ourselves for various purposes.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card-event">
+                    <img src="img/services-event.jpg" class="card-image-event"></img>
+                    <div class="card-description-event">
+                        <p class="text-title-event">Event Organizing</p>
+                        <p class="text-body-event">We host different events in campus regarding drones as well as other technical aspects.</p>
+                    </div>
+
+                </div>
+        </section>
+        <hr style="width:100%;text-align:left;margin-left:0">
+    </section>
+
+
+
+
+    <!--projects-->
+
+
+    <section id="Projects" class="text-black body-font">
+        <div class="proj">
+            <h1>Projects</h1>
+
+
+            <!--skye eye-->
+
+
+            <div class="card1">
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                    <div class="card__content">
+                        <p class="card__title">Skye Eye</p><br>
+                        <p class="card__description">Type: FPV (First Person View) Drone.</p>
+                        <br>
+                        <p class="card__desc__more">Sky Eye. This drone is a FPV drone or in simple terms a racing drone. This drone was developed to compete in National level e-Yantram competition, which was held in Navsahyadri Group of Institues, College of Engineering. This project
+                            was our very first project. </p><br>
+                        <section class="button_align">
+                            <button class="card__button" id="openDemo">Working Demo</button>
+                            <button class="card__button secondary" id="openImages">Drone Images</button>
+                        </section>
+
+
+                        <!--skye eye working demo-->
+
+
+                    </div>
+                </div>
+                <div class="popup-overlay" id="popupOverlay">
+                    <div class="popup-window">
+                        <span class="close-btn" id="closeBtn">&times;</span>
+                        <h2>Working Demo</h2>
+                        <div class="popup-content">
+                            <video controls>
+                                <source src="video-url.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--skye eye drone imgs-->
+
+
+                <div class="imgpopup-overlay" id="imgpopupOverlay">
+                    <div class="imgpopup-window">
+                        <span class="imgclose-btn" id="imgcloseBtn">&times;</span>
+                        <h2>Drone Images</h2>
+                        <div class="imgpopup-content">
+                            <!-- Add your image URLs here -->
+                            <img src="image1.jpg" alt="Drone Image 1">
+                            <img src="image2.jpg" alt="Drone Image 2">
+                            <img src="image3.jpg" alt="Drone Image 3">
+                            <!-- Add more images as needed -->
+                        </div>
+                    </div>
+                </div>
+
+                <!--project 2-->
+
+                <div class="card2">
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                        <div class="card__content">
+                            <p class="card__title">Project 2</p><br>
+                            <p class="card__description">Lorem </p>
+                            <br>
+                            <p class="card__desc__more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, maiores praesentium. Voluptate blanditiis ex minima animi velit debitis numquam, laborum suscipit delectus accusamus esse eos adipisci autem neque eum maiores?
+                            </p><br>
+                            <section class="button_align">
+                                <button class="card__button" id="openDemo1">Working Demo</button>
+                                <button class="card__button secondary" id="openImages1">Drone Images</button>
+                            </section>
+
+
+                            <!--proj 2 working demo-->
+
+
+                        </div>
+                    </div>
+                    <div class="popup-overlay1" id="popupOverlay1">
+                        <div class="popup-window1">
+                            <span class="close-btn1" id="closeBtn1">&times;</span>
+                            <h2>Working Demo</h2>
+                            <div class="popup-content1">
+                                <video controls>
+                                <source src="video-url.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--proj 2 drone imgs-->
+
+
+                    <div class="imgpopup-overlay1" id="imgpopupOverlay1">
+                        <div class="imgpopup-window1">
+                            <span class="imgclose-btn1" id="imgcloseBtn1">&times;</span>
+                            <h2>Drone Images</h2>
+                            <div class="imgpopup-content1">
+                                <!-- Add your image URLs here -->
+                                <img src="image1.jpg" alt="Drone Image 1">
+                                <img src="image2.jpg" alt="Drone Image 2">
+                                <img src="image3.jpg" alt="Drone Image 3">
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--more projects when done-->
+
+                </div>
+            </div>
+        </div>
+        <a class="bottomline">More drones are in development. It will be updated soon!</a>
+        </div>
+        </div>
+        <hr style="width:100%;text-align:left;margin-left:0">
+    </section>
+    <br>
+
+    <br>
+
+
+
+    <!--team-->
+
+
+    <section id="Our Team">
+        <section class="text-black body-font">
+            <div class="proj">
+                <h1 class="secname">Our Team</h1>
+                <div class="flex flex-col text-center w-full mb-20">
+                    <p class="textbox1"> <b>Drone club </b>is a Technical platform for students to share their ideas, <br> collaborate with each other to come up with unique solutions and work in teams to prepare drones to serve the society.</p>
+                </div>
+                </a>
+
+                <h1>Club Advisor</h1><br>
+                <div class="advisor-card">
+                    <div class="photo-container">
+                        <img src="img/services-flight.jpg" alt="Club Advisor" class="advisor-photo">
+                    </div>
+                    <div class="info">
+                        <h1 class="name">Vikram Avhad</h1>
+                        <h2 class="title">Club Advisor & Asst. Professor</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem maxime aspernatur tempore dolor aperiam doloremque, sequi, vero maiores voluptate enim nesciunt eius! Vero dolores error dicta corporis vitae explicabo.</p>
+                    </div>
+                </div>
+
+                <section class="team-section">
+                    <br>
+                    <h1>Management Committee</h1>
+                    <br>
+                    <div class="team-container">
+                        <div class="team-member">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="img/services-manufacturing.jpg" alt="Team Member">
+                                    <div class="info">
+                                        <h2>Suraj Pawar</h2>
+                                        <p>President</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="details">
+                                        <h2>Suraj Pawar</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus atque unde assumenda exercitationem quis libero quibusdam odio provident, veritatis porro pariatur! Hic placeat omnis quae, veniam voluptatum
+                                            nam nobis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="img/services-event.jpg" alt="Team Member">
+                                    <div class="info">
+                                        <h2>Shraddha Jadhav</h2>
+                                        <p>Vice-President
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="details">
+                                        <h2>Shraddha Jadhav</h2>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti, molestiae blanditiis deserunt iure vitae illo? Eveniet consequuntur, obcaecati ad soluta explicabo accusamus sed nobis aut suscipit sequi
+                                            dignissimos doloribus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="img/services-manufacturing.jpg" alt="Team Member">
+                                    <div class="info">
+                                        <h2>Simran Pathan</h2>
+                                        <p>Treasurer</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="details">
+                                        <h2>Simran Pathan</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui omnis possimus minima, nesciunt at nisi cupiditate numquam amet modi consectetur neque tenetur dolore alias beatae esse explicabo dicta quibusdam officia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <br>
+                <br>
+
+
+                <h1>Team Members</h1>
+                <section id="Technical Team">
+                    <div class="teammem">
+                        <h2 class="teamname">Technical Team</h2>
+                        <div class="flex flex-wrap -m-2">
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/services-event.jpg">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Shoheb Shaikh</h2>
+                                        <p class="text-gray-500">Technical Team Head</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/services-manufacturing.jpg">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Ajay Savare</h2>
+                                        <p class="text-gray-500">Technical Team Co-ordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/services-workshop.jpg">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Harsh Pandey</h2>
+                                        <p class="text-gray-500">Technical Team Co-ordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Om Mohabey</h2>
+                                        <p class="text-gray-500">Technical Team Co-ordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Aditya Chavan</h2>
+                                        <p class="text-gray-500">Technical Team Co-ordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br>
+
+                <section id="Event Team">
+                    <div class="teammem">
+                        <h2 class="teamname">Event Team</h2>
+                        <div class="flex flex-wrap -m-2">
+
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Diksha Gholap</h2>
+                                        <p class="text-gray-500">Event-Managing Head</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/98x98">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Snehal Waghmare</h2>
+                                        <p class="text-gray-500">Event-Coordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Siddhi Dhore</h2>
+                                        <p class="text-gray-500">Event-Coordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Sneha Kakade</h2>
+                                        <p class="text-gray-500">Event-Coordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/104x94">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Snehal Bhosale</h2>
+                                        <p class="text-gray-500">Event-Coordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <section id="Research Team">
+                    <div class="teammem">
+                        <h2 class="teamname">Research Team</h2>
+                        <div class="flex flex-wrap -m-2">
+
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Siddhika Gholap</h2>
+                                        <p class="text-gray-500">Research Team Head</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/104x94">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Chinmayee Magar</h2>
+                                        <p class="text-gray-500">Research Team Co-ordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/108x98">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Kritika Mishra</h2>
+                                        <p class="text-gray-500">Research Team Co-ordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <section id="Flight Team">
+                    <div class="teammem">
+                        <h2 class="teamname">Flight Team</h2>
+                        <div class="flex flex-wrap -m-2">
+
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Manav Chettiar</h2>
+                                        <p class="text-gray-500">Flight-Operation Head</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Prem Bijarne</h2>
+                                        <p class="text-gray-500">Drone Pilot & Safety Co-ordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Kedar Jagdale</h2>
+                                        <p class="text-gray-500">Drone Pilot & Safety Co-ordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </section>
+
+                <section id="Media Team">
+                    <div class="teammem">
+                        <h2 class="teamname">Media Team</h2>
+                        <div class="flex flex-wrap -m-2">
+
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Abhilash Habbu</h2>
+                                        <p class="text-gray-500">Membership, Media & Design Head</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+                                    <div class="flex-grow">
+                                        <h2 class="text-gray-900 title-font font-medium">Pradnya Jadhav</h2>
+                                        <p class="text-gray-500">Media & Design Coordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </section>
+    </section>
+    <hr style="width:100%;text-align:left;margin-left:0">
+
+
+    <!--contact-->
+
+
+    <section id="Contact">
+        <div class="proj">
+            <h1 class="secname">Contact Us</h1>
+            <section class="text-black body-font relative">
+                <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+                    <div class="lg:w-2/3 md:w-1/2 bg-blackborder-black rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.2055207424755!2d73.95958110638962!3d18.55549854561803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3b8cc06fdf1%3A0xd65b9f8b0cc88bee!2sDHOLE%20PATIL%20COLLEGE%20OF%20ENGINEERING%2C%20Vitthal%20Nagar%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20412207!5e0!3m2!1sen!2sin!4v1704729522617!5m2!1sen!2sin"
+                            style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                            <div class="lg:w-1/2 px-6">
+                                <h2 class="title-font font-semibold text-black tracking-widest text-xs">ADDRESS</h2>
+                                <p class="mt-1">Near EON IT Park Kharadi, Dhole Patil College Road, Wagholi, Pune - 412207</p>
+                            </div>
+                            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                                <h2 class="title-font font-semibold text-black tracking-widest text-xs">EMAIL</h2>
+                                <a class="text-blue-900 leading-relaxed">dpcoe.officaldtc@gmail.com emv98</a>
+                                <h2 class="title-font font-semibold text-black tracking-widest text-xs mt-4">PHONE</h2>
+                                <p class="leading-relaxed">Abhilash Habbu: +91 89758 47121</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                        <h1 class="enquiry">Enquiry Form
+                        </h1>
+                        <p class="leading-relaxed mb-5 text-black">For workshops and drones related queries, please fill below enquiry form.
+                            <br> Our team will contact you in no time.</p>
+
+                        <div class="relative mb-4">
+                            <label for="name" class="leading-7 text-sm text-black">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-white rounded border border-black focus:border-rgb(122, 178, 178) focus:ring-2 focus:ring-rgb(77, 134, 156) text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-black">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full bg-white rounded border border-black focus:border-rgb(122, 178, 178) focus:ring-2 focus:ring-rgb(77, 134, 156) text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="subject" class="leading-7 text-sm text-black">Subject</label>
+                            <input type="subject" id="subject" name="subject" required class="w-full bg-white rounded border border-black focus:border-rgb(122, 178, 178) focus:ring-2 focus:ring-rgb(77, 134, 156) text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="message" class="leading-7 text-sm text-black">Message</label>
+                            <textarea id="message" name="message" required class="w-full bg-white rounded border border-black focus:border-rgb(122, 178, 178) focus:ring-2 focus:ring-rgb(77, 134, 156) h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                        <button class="contact-button">Submit</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    </section>
+    </section>
+    </div>
+    </div>
+    </section>
+
+
+
+    <!--footer-->
+
+
+    <footer class="footer">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="img/dtc logo.png" class="logo">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 — DPES
+                <a> @dtc - All Rights Reserved  </a>
+            </p>
+            <div class="cntactinfo">
+                <a href="#" class="socialContainer containerOne">
+                    <svg class="socialSvg instagramSvg" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
+                </a>
+
+                <a href="#" class="socialContainer containerTwo">
+                    <svg class="socialSvg twitterSvg" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path> </svg>                    </a>
+
+                <a href="#" class="socialContainer containerThree">
+                    <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                </a>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
